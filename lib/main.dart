@@ -3,8 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:app/homePage.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-final productivityProvider=Provider<ProductivityTools>((ref)
-return ProductivityTools());
+final productivityProvider = Provider<ProductivityTools>((ref) {
+  return ProductivityTools();
+});
 
 void main() => runApp(ProviderScope(child: MyApp()));
 
